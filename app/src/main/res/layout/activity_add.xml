@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAFA"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/diary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textColor="#C76114"
+        android:background="#FFFFF0"
+        android:hint="标题：" />
+
+
+    <EditText
+        android:id="@+id/diary_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFC0CB"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:textColor="#FFFFFF"
+        android:hint="日记内容："
+        />
+
+    <ImageView
+        android:id="@+id/diary_picture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <!--设置布局里面控件的个个信息-->
+        <Button
+            android:id="@+id/button_shot"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="拍摄"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#DAA569"
+            android:background="#FFDEAD"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_album"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="选择本地"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#DAA569"
+            android:background="#FFDEAD"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/diary_writer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textColor="#D2691E"
+        android:background="#FFE4E1"
+        android:hint="作者：" />
+
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="保存"
+        android:layout_marginTop="10dp"
+        android:textColor="#DAA569"
+        android:background="#FFDEAD"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="取消"
+        android:layout_marginTop="10dp"
+        android:textColor="#DAA569"
+        android:background="#FFDEAD"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>
